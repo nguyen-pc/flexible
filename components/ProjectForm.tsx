@@ -10,13 +10,13 @@ import { categoryFilters } from "@/constants";
 import { createNewProject, fetchToken, updateProject } from "@/lib/actions";
 import { useRouter } from "next/navigation";
 
-type Prop = {
+type Props = {
   type: string;
   session: SessionInterface;
-  project: ProjectInterface;
+  project?: ProjectInterface;
 };
 
-const ProjectForm = ({ type, session, project }: Prop) => {
+const ProjectForm = ({ type, session, project }: Props) => {
   const router = useRouter();
 
   const handleFormSubmit = async (e: React.FormEvent) => {
