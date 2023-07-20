@@ -2,7 +2,6 @@ import Image from "next/image";
 import { MouseEventHandler } from "react";
 
 type Props = {
-  children: any;
   title: string;
   leftIcon?: string | null;
   rightIcon?: string | null;
