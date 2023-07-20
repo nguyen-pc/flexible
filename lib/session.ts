@@ -86,6 +86,3 @@ export async function getCurrentUser() {
 
   return session;
 }
-
-//return a google user
-//name, email, avatarUrl
